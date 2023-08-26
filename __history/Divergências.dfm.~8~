@@ -1,0 +1,87 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Diverg'#234'ncias'
+  ClientHeight = 473
+  ClientWidth = 445
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 413
+    Width = 445
+    Height = 41
+    Align = alBottom
+    TabOrder = 0
+    ExplicitWidth = 1054
+    object Button1: TButton
+      Left = 1
+      Top = 1
+      Width = 443
+      Height = 39
+      Align = alClient
+      Caption = 'Fechar'
+      TabOrder = 0
+      OnClick = Button1Click
+      ExplicitLeft = 182
+      ExplicitTop = 10
+      ExplicitWidth = 75
+      ExplicitHeight = 25
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 454
+    Width = 445
+    Height = 19
+    Panels = <>
+    SimplePanel = True
+    ExplicitWidth = 1054
+  end
+  object GridRetorno: TDBGrid
+    Left = 0
+    Top = 0
+    Width = 445
+    Height = 413
+    Align = alClient
+    DataSource = DSRetorno
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+    TabOrder = 2
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
+  object DSRetorno: TDataSource
+    DataSet = CDS_Retorno
+    Left = 176
+    Top = 184
+  end
+  object CDS_Retorno: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 232
+    Top = 184
+    object CDS_RetornoINDICE: TIntegerField
+      FieldName = 'INDICE'
+    end
+    object CDS_RetornoSTATUSPREFEITURA: TStringField
+      FieldName = 'STATUSPREFEITURA'
+    end
+    object CDS_RetornoSTATUSDESBRAVADOR: TStringField
+      FieldName = 'STATUSDESBRAVADOR'
+    end
+    object CDS_RetornoVALOR: TCurrencyField
+      FieldName = 'VALOR'
+    end
+  end
+end

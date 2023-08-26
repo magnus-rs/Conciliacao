@@ -1,0 +1,76 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Diverg'#234'ncias'
+  ClientHeight = 473
+  ClientWidth = 1054
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 413
+    Width = 1054
+    Height = 41
+    Align = alBottom
+    TabOrder = 0
+    object Button1: TButton
+      Left = 463
+      Top = 8
+      Width = 75
+      Height = 25
+      Caption = 'Fechar'
+      TabOrder = 0
+      OnClick = Button1Click
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 454
+    Width = 1054
+    Height = 19
+    Panels = <>
+  end
+  object GridRetorno: TDBGrid
+    Left = 0
+    Top = 0
+    Width = 1054
+    Height = 413
+    Align = alClient
+    DataSource = DSRetorno
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+    TabOrder = 2
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
+  object DSRetorno: TDataSource
+    DataSet = CDS_Retorno
+    Left = 344
+    Top = 184
+  end
+  object CDS_Retorno: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 416
+    Top = 184
+    object CDS_RetornoINDICE: TIntegerField
+      FieldName = 'INDICE'
+    end
+    object CDS_RetornoSTATUSPREFEITURA: TStringField
+      FieldName = 'STATUSPREFEITURA'
+    end
+    object CDS_RetornoSTATUSDESBRAVADOR: TStringField
+      FieldName = 'STATUSDESBRAVADOR'
+    end
+  end
+end

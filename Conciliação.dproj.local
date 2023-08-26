@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/05/13 17:08:23.000.167,=C:\Users\contr\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/05/13 17:10:27.000.275,C:\Users\contr\OneDrive\Documentos\Embarcadero\Studio\Projects\Principal.pas=C:\Users\contr\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/05/13 17:10:27.000.275,C:\Users\contr\OneDrive\Documentos\Embarcadero\Studio\Projects\Principal.dfm=C:\Users\contr\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/05/13 17:10:37.000.681,C:\Users\contr\OneDrive\Documentos\Embarcadero\Studio\Projects\Conciliação.dproj=C:\Users\contr\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2021/05/19 14:10:26.000.593,=C:\Users\contr\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2021/05/19 14:11:40.000.789,C:\Users\contr\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.dfm=C:\Users\contr\OneDrive\Documentos\Embarcadero\Studio\Projects\Divergências.dfm</Transaction>
+    <Transaction>2021/05/19 14:11:40.000.789,C:\Users\contr\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas=C:\Users\contr\OneDrive\Documentos\Embarcadero\Studio\Projects\Divergências.pas</Transaction>
+  </Transactions>
+</BorlandProject>
